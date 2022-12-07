@@ -2,7 +2,7 @@
 En este proyecto realizaremos un  **ETL** (Extract, Transform, Load) a los datos que se extraen de la **API de Spotify**, mediante **Spotipy** que nos permite programarlo en python.
 
 ## API SPOTIFY
-Para obtener las credenciales de la API debemos ir a su [sitio web] ([aquí](https://developer.spotify.com/dashboard/login)) y registrarnos, con esto obtendremos los siguientes datos:
+Para obtener las credenciales de la API debemos ir a su [sitio web](https://developer.spotify.com/dashboard/login) y registrarnos, con esto obtendremos los siguientes datos:
   - CLIENT_ID
   - CLIENT_SECRET
   - SPOTIPY_REDIRECT_URI
