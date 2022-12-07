@@ -2,7 +2,7 @@
 En este proyecto realizaremos un  **ETL** (Extract, Transform, Load) a los datos que se extraen de la **API de Spotify**, mediante **Spotipy** que nos permite programarlo en python.
 
 ## API SPOTIFY
-Para obtener las credenciales de la API debemos ir a su [sitio web]([aquí](https://developer.spotify.com/dashboard/login)) y registrarnos, con esto obtendremos los siguientes datos:
+Para obtener las credenciales de la API debemos ir a su [sitio web] ([aquí](https://developer.spotify.com/dashboard/login)) y registrarnos, con esto obtendremos los siguientes datos:
   - CLIENT_ID
   - CLIENT_SECRET
   - SPOTIPY_REDIRECT_URI
@@ -24,10 +24,9 @@ pipenv shell
 Instalamos las librerías necesarias
 ```
 pipenv install spotipy
-pipenv install python-decouple
 pipenv install pandas
 pipenv install sqlalchemy
-pipenv install psycopg2
+pipenv install psycopg2-binary
 ```
 ## EXTRACT
 En esta fase **extraemos** los *datos crudos* de la API.
