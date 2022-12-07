@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+  pythonapp:
+    build: .
+    stdin_open: true
+    tty: true
+    ports:
+      - "8083:8083"
+    volumes:
+      - ./src:/src
+  pg_container:
+    image: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=spotipy
+      - POSTGRES_USER=spotipy
+      - POSTGRES_DB=spotipy_db
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=admin@admin.com
+      - PGADMIN_DEFAULT_PASSWORD=admin
+    ports:
+      - "80:80"
+    depends_on:
+      - pg_container
